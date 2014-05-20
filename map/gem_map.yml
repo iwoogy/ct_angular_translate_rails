@@ -1,0 +1,28 @@
+---
+module:
+  name: "pascalprecht.translate"
+uis:
+  - name: translate
+  - name: $translate
+    type: service
+  - name: $translateCookieStorage
+    type: service
+  - name: $translateDefaultInterpolation
+    type: service
+  - name: $translateLocalStorage
+    type: service
+  - name: $translateMessageFormatInterpolation
+    type: service
+  - name: $translateMissingTranslationHandlerLog
+    type: service
+  - name: $translatePartialLoader
+    type: service
+  - name: $translateStaticFilesLoader
+    type: service
+  - name: $translateUrlLoader
+    type: service
+actions:
+  javascript:
+    include?: true
+  module:
+    include?: true
